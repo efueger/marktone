@@ -1,0 +1,45 @@
+version: "1.0"
+checks:
+  argument-count:
+    enabled: true
+    config:
+      threshold: 4
+  method-complexity:
+    enabled: true
+    config:
+        threshold: 8
+  method-cound:
+    enabled: true
+    config:
+      threshold: 20
+  method-lines:
+    config:
+      threshold: 200
+  file-lines:
+    enabled: true
+    config:
+      threshold: 500
+  complex-logic:
+    config:
+      threshold: 8
+  identical-code:
+    config:
+      threshold: 25
+  duplicate-code:
+    config:
+      threshold: 50
+plugins:
+  pylint:
+    enabled: false
+exclude_patterns:
+  - "*.secret"
+  - "*.gha"
+  - .github
+  - .codeclimate.yml
+  - .dockerignore
+  - .gitignore
+  - "*.env"
+  - docker-compose.yml
+  - Dockerfile
+  - config
+  - "**/*.md"
