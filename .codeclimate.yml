@@ -32,13 +32,13 @@ plugins:
   pylint:
     enabled: true
 exclude_patterns:
-  - *.secret
-  - *.gha
+  - "*.secret"
+  - "*.gha"
   - .github
   - .codeclimate.yml
   - .dockerignore
   - .gitignore
-  - *.env
+  - "*.env"
   - docker-compose.yml
   - Dockerfile
   - config
