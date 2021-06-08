@@ -30,7 +30,7 @@ checks:
       threshold: 50
 plugins:
   pylint:
-    enabled: true
+    enabled: false
 exclude_patterns:
   - "*.secret"
   - "*.gha"
